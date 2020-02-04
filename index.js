@@ -1,0 +1,20 @@
+var name = "Anju Tailor";
+console.log(name);
+var num = 55;
+console.log(num);
+num = num + 10;
+console.log(num);
+var arya = 25;
+console.log(arya);
+num = num - arya;
+console.log(num);
+arya = arya - num;
+console.log(arya);
+var i = 0;
+i++;
+i++;
+i++;
+i++;
+i++;
+
+document.getElementById("div1").innerHTML = i;

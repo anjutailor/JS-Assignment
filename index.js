@@ -16,5 +16,7 @@ i++;
 i++;
 i++;
 i++;
+var myname = 'i am "bhavin" i like "dogs"';
+console.log(myname);
 
 document.getElementById("div1").innerHTML = i;

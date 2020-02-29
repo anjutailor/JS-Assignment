@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      var arry = [11, 12, 13, 14, 15];
+      console.log(arry);
+      var Num = arry[3];
+      console.log(Num);
+      arry[4] = 16;
+      console.log(arry);
+      var myArray = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [[10, 11, 12], 13, 14]
+      ];
+      console.log(myArray);
+      var data = myArray[3][0][2];
+      console.log(data);
+      var myArray = [
+        //dont use same name for array variable as above
+        ["John", 23],
+        ["cat", 2]
+      ];
+      console.log(myArray);
+      myArray.push = [
+        ["Dog", 4],
+        ["Mouse", 1]
+      ];
+      console.log(myArray);
+      var removedFrommyArray = myArray.pop();
+      console.log(removedFrommyArray);
+      var removedFrommyArray = myArray.shift(); //define new variable
+      console.log(removedFrommyArray);
+      var myName = ["Arya", "Anju", "Bhavin"];
+      console.log(myName);
+      myName.shift();
+      console.log(myName);
+      myName.unshift("Aria");
+      console.log(myName);
+      var myShoplist = ["Milk", 3];
+      ["choco", 5];
+      ["soda", 1]; // why are you using round brackets?
+      ["rico", 1]; // why are you using round brackets?
+      console.log(myShoplist);
+
+      function myname() {
+        // always make sure you dont use same names for variable and functions even if the case is different
+        console.log("Hi Anju");
+      }
+      myname();
+      function Numberofmutipply(Num1, Num2) {
+        // Variable should be camelcase and not proper case
+        console.log(Num1 * Num2);
+      }
+      Numberofmutipply(5, 7);
+      var String1 = "This is String"; // variable must be camel case
+      function fun1() {
+        oopsGlobal = "This is oops String"; // variable must be camel case
+      }
+
+      function fun2() {
+        var output = "";
+        if (typeof String1 != "undefined") {
+          output += "String1 " + String1;
+        }
+        console.log(output);
+        if (typeof oopsGlobal != "undefined") {
+          output += " oopsGlobal" + oopsGlobal;
+        }
+        console.log(output);
+      }
+      fun1();
+      fun2();
+      function myTest() {
+        var myloc = "Test"; //variable must be camel case
+        console.log(myloc);
+      }
+      myTest();
+
+      var myFirstname = "Anju";
+      function myname() {
+        var myFirstname = "Arya";
+        return myFirstname;
+      }
+      console.log(myname());
+      console.log(myFirstname);
+    </script>
+  </body>
+</html>

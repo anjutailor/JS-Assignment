@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h2>Project Turn on/Turnoff</h2>
+    <p>javascript can change HTML attributes values</p>
+    <p id="Project">
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+    <button
+      type="button"
+      onclick="document.getElementById('Project').style.fontSize='50px'"
+    >
+      Click Me!
+    </button>
+    <button
+      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"
+    >
+      Turn on the light
+    </button>
+    <img
+      id="myImage"
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      style="width:100px"
+    />
+    <button
+      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'"
+    >
+      Turn off the light
+    </button>
+    <p id="demo"></p>
+    <h2>Anju Tailor</h2>
+    <p id="name">Name Changed.</p>
+    <button type="button" onclick="myName()">Click Me</button>
+    <script>
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+      function myName() {
+        document.getElementById("name").innerHTML = "Arya.";
+      }
+    </script>
+  </body>
+</html>

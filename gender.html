@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input
+      type="button"
+      value="100"
+      onclick="myNumber(true)"
+      id="btn100"
+      name="Number"
+    />&nbsp;&nbsp;
+    <input
+      type="button"
+      value="200"
+      onclick="myNumber(false)"
+      id="btn200"
+      name="Number"
+    />
+    <script>
+      function myNumber(Number) {
+        if (Number) {
+          alert("100");
+        } else {
+          alert("200");
+        }
+      }
+    </script>
+  </body>
+</html>
